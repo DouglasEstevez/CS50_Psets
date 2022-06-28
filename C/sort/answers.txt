@@ -1,0 +1,11 @@
+sort1 uses: bubble sort.
+
+How do you know?: Is faster then 3 when is a sorted text but when is random ans reversed is the slower
+
+sort2 uses: merge sort.
+
+How do you know?: when using "random"50000.txt is the fastaste by far
+
+sort3 uses: selection sort.
+
+How do you know?: not faster than 2 but faster than 1 when is a text not sorted
