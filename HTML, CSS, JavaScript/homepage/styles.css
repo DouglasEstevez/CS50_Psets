@@ -1,0 +1,96 @@
+.header {
+    background-color: #477bff;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.half {
+    width:50%;
+    display: table-cell;
+  }
+
+.title{
+    position: relative;
+    top: 20px;
+    left: 500px;
+}
+
+.text1{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.text2{
+    position: relative;
+    left: 500px;
+    bottom: 300px;
+}
+
+.imgem{
+    position: relative;
+    left: 600px;
+    top: 250px;
+}
+
+.text3{
+    position: relative;
+    bottom: 300px;
+    left: 50px;
+}
+
+.limk1{
+    position: relative;
+    left: 0px;
+}
+
+.limk2{
+    position: relative;
+    left: 0px;
+}
+
+#Brazil{
+    color: green;
+}
+
+img[src]{
+    border-style: solid;
+}
+
+h2:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size: medium;
+}
+
+.botao{
+    position: relative;
+    left: 200px;
+}
+
+.time{
+    position: relative;
+    left: 50px;
+}

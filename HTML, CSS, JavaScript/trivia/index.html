@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            //Add code to check answers to questions
+                        document.addEventListener('DOMContentLoaded', function(){
+                // TODO: Add code to check answers to questions
+                // Multiple Choice
+                let correct_button = document.querySelector('#correct');
+                let correct_message = document.querySelector("#feedback1");
+                correct_button.addEventListener('click', function(){
+                       correct_button.style.backgroundColor = 'green';
+                       correct_message.innerHTML = 'Correct!';
+                       correct_message.style.color = 'green';
+                });
+
+                let wrong_buttons = document.querySelectorAll('.wrong');
+                for (let i = 0; i < wrong_buttons.length; i++)
+                {
+                    wrong_buttons[i].addEventListener('click', function() {
+                        this.style.backgroundColor = 'red';
+                        correct_message.innerHTML = 'Incorrect';
+                        correct_message.style.color = 'red';
+                    })
+                }
+
+
+                //Free Response
+                let free_response_button = document.querySelector('#submit');
+                let free_response_message = document.querySelector("#feedback2");
+                free_response_button.addEventListener('click', function(){
+                       let free_response_input = document.querySelector('#box');
+                       if(free_response_input.value === "CS50"){
+                           free_response_input.style.color = 'green';
+                           free_response_message.innerHTML = 'Correct';
+                           free_response_message.style.color = 'green';
+                       }
+                       else{
+                           free_response_input.style.color = 'red';
+                           free_response_message.innerHTML = 'Incorrect!';
+                           free_response_message.style.color = 'red';
+                       }
+                });
+
+           });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which organelle is known as the power house of the cell?</h3>
+                <!--Add multiple choice question here -->
+
+                <button class="wrong">Ribosome</button>
+                <button class="wrong">cholesterol</button>
+                <button class="wrong">Carbohydrate</button>
+                <button id="correct">Mitochondria</button>
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!--Add free response question here -->
+                <h3>What is the best computer science course?</h3>
+                <input type="text" id="box" >
+                <input type="submit" id="submit">
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>
